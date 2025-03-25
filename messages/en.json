@@ -1,0 +1,134 @@
+{
+    "header": {
+        "brand": "Brew Haven",
+        "home": "Home",
+        "menu": "Menu",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "hero": {
+        "imageAlt": "Coffee shop ambiance",
+        "headline": "Where Every Sip Tells a",
+        "highlight": "Story",
+        "description": "Artisanal coffee, cozy atmosphere, and unforgettable moments. Experience the perfect blend at Brew Haven.",
+        "exploreMenu": "Explore Menu",
+        "findUs": "Find Us"
+    },
+    "newsletter": {
+        "title": "Stay Connected",
+        "description": "Subscribe to our newsletter for updates on new coffee arrivals, special promotions, and upcoming events.",
+        "placeholder": "Your email address",
+        "subscribe": "Subscribe"
+    },
+    "testimonials": {
+        "title": "What Our Customers Say",
+        "description": "Don't just take our word for it. Here's what coffee lovers have to say about their Brew Haven experience.",
+        "reviews": [
+            {
+                "name": "Sarah Johnson",
+                "role": "Regular Customer",
+                "content": "The best coffee in town! I come here every morning before work. The atmosphere is cozy and the baristas remember my usual order."
+            },
+            {
+                "name": "Michael Chen",
+                "role": "Freelancer",
+                "content": "My favorite place to work remotely. Fast WiFi, great coffee, and the perfect ambient noise level. The cold brew is my go-to."
+            },
+            {
+                "name": "Emily Rodriguez",
+                "role": "Coffee Blogger",
+                "content": "As a coffee connoisseur, I can confidently say Brew Haven serves some of the most expertly crafted espresso in the city."
+            }
+        ]
+    },
+    "featuredProducts": {
+        "title": "Our Signature Brews",
+        "description": "Carefully selected beans, expertly roasted and brewed to perfection. Discover your new favorite.",
+        "products": [
+            {
+                "name": "Classic Espresso",
+                "price": "$3.50",
+                "description": "Rich and intense, our signature espresso is the perfect pick-me-up any time of day."
+            },
+            {
+                "name": "Creamy Cappuccino",
+                "price": "$4.25",
+                "description": "The perfect balance of espresso, steamed milk, and velvety foam for a luxurious experience."
+            },
+            {
+                "name": "Smooth Cold Brew",
+                "price": "$4.75",
+                "description": "Steeped for 24 hours, our cold brew offers a smooth, low-acidity coffee experience."
+            }
+        ],
+        "orderNow": "Order Now",
+        "viewMenu": "View Full Menu"
+    },
+    "contactSection": {
+        "title": "Visit Us",
+        "description": "We'd love to see you! Stop by for a cup, a chat, or just to enjoy the atmosphere.",
+        "contactInfo": "Contact Information",
+        "address": {
+            "label": "Address",
+            "value": "123 Coffee Street, Brewville, CA 90210"
+        },
+        "hours": {
+            "label": "Hours",
+            "weekdays": "Monday - Friday: 7am - 8pm",
+            "weekends": "Saturday - Sunday: 8am - 9pm"
+        },
+        "phone": {
+            "label": "Phone",
+            "value": "(555) 123-4567"
+        },
+        "email": {
+            "label": "Email",
+            "value": "hello@brewhaven.com"
+        },
+        "followUs": "Follow Us",
+        "mapPlaceholder": "Map would be displayed here"
+    },
+    "aboutSection": {
+        "title": "Our Story",
+        "description1": "Founded in 2010, Brew Haven began as a small cart in the local farmers market. Our passion for exceptional coffee and community connection quickly earned us a loyal following.",
+        "description2": "Today, we source our beans directly from sustainable farms around the world, roast them in small batches, and serve them with care and expertise. Every cup represents our commitment to quality and our love for the craft.",
+        "stats": {
+            "experience": {
+                "value": "12+",
+                "label": "Years of Experience"
+            },
+            "varieties": {
+                "value": "15",
+                "label": "Coffee Varieties"
+            },
+            "locations": {
+                "value": "5",
+                "label": "Locations"
+            }
+        },
+        "imageAlt": "Coffee shop interior"
+    }
+    ,
+
+    "footer":
+    {
+        "brand": "Brew Haven",
+        "tagline": "Crafting exceptional coffee experiences since 2010.",
+        "quickLinks": "Quick Links",
+        "home": "Home",
+        "menu": "Menu",
+        "about": "About Us",
+        "contact": "Contact",
+        "policies": "Policies",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "refundPolicy": "Refund Policy",
+        "faq": "FAQ",
+        "contactInfo": "Contact",
+        "address": "123 Coffee Street",
+        "city": "Brewville, CA 90210",
+        "email": "hello@brewhaven.com",
+        "phone": "(555) 123-4567",
+        "copyright": "All rights reserved."
+    }
+}
