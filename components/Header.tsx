@@ -1,20 +1,25 @@
-"use client"; // Ensure this is at the top
+"use client";
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation"; // Import usePathname
+import { useRouter, usePathname } from "next/navigation";
+import { useState } from "react"; // Import useState
 
 export default function Header() {
     const t = useTranslations("header");
     const router = useRouter();
-    const pathname = usePathname(); // Get current path
+    const pathname = usePathname();
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu open/close
 
-    // Extract locale from pathname (assuming URL is "/en" or "/hi")
     const currentLocale = pathname.startsWith("/hi") ? "hi" : "en";
 
     const switchLanguage = () => {
         const newLocale = currentLocale === "en" ? "hi" : "en";
-        router.push(`/${newLocale}${pathname.substring(3)}`); // Keep the same path while changing locale
+        router.push(`/${newLocale}${pathname.substring(3)}`);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen); // Toggle menu state
     };
 
     return (
@@ -25,7 +30,7 @@ export default function Header() {
                     <span className="text-xl font-bold">{t("brand")}</span>
                 </div>
 
-                <button className="block md:hidden">
+                <button className="block md:hidden" onClick={toggleMenu}> {/* Add onClick handler */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -37,8 +42,8 @@ export default function Header() {
                     </svg>
                 </button>
 
-                <nav className="hidden md:flex items-center gap-6">
-                    <ul className="flex gap-8">
+                <nav className={`md:flex items-center gap-6 ${isMenuOpen ? 'flex flex-col' : 'hidden'}`}> {/* Conditionally show/hide */}
+                    <ul className="flex flex-col md:flex-row gap-8"> {/* Stack on mobile */}
                         <li><Link href="/#home" className="hover:text-amber-300">{t("home")}</Link></li>
                         <li><Link href="/#menu" className="hover:text-amber-300">{t("menu")}</Link></li>
                         <li><Link href="/#about" className="hover:text-amber-300">{t("about")}</Link></li>
