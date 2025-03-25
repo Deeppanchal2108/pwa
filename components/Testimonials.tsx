@@ -1,5 +1,11 @@
 import { useTranslations } from "next-intl";
 
+interface Review {
+    name: string;
+    role: string;
+    content: string;
+}
+
 export default function Testimonials() {
     const t = useTranslations("testimonials");
     const reviews = t.raw("reviews");
@@ -13,7 +19,7 @@ export default function Testimonials() {
                 </div>
 
                 <div className="grid gap-8 md:grid-cols-3">
-                    {reviews.map((testimonial:any, index:any) => (
+                    {reviews.map((testimonial: Review, index: number) => (
                         <div key={index} className="rounded-xl bg-white p-6 shadow-md">
                             <div className="mb-4 flex">
                                 {[1, 2, 3, 4, 5].map((star) => (

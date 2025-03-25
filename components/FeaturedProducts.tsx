@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+interface Product {
+    name: string;
+    price: string;
+    description: string;
+}
+
 export default function FeaturedProducts() {
     const t = useTranslations("featuredProducts");
     const products = t.raw("products");
@@ -14,7 +20,7 @@ export default function FeaturedProducts() {
                 </div>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    {products.map((product:any, index:any) => (
+                    {products.map((product: Product, index: number) => (
                         <div key={index} className="group overflow-hidden rounded-xl bg-white shadow-md transition-transform hover:-translate-y-1">
                             <div className="relative h-64 overflow-hidden">
                                 <Image
